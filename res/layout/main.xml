@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1"
+              android:baselineAligned="false"
+              android:orientation="vertical">
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/app_main_title"
+            android:id="@+id/textTitle"
+            android:layout_gravity="top"
+            android:singleLine="true"/>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:baselineAligned="true"
+            android:clickable="false"
+            android:visibility="visible"
+            >
+
+        <EditText
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/host"
+                android:layout_gravity="center_vertical"
+                android:enabled="true"
+                android:focusable="true"
+                android:singleLine="true"
+                android:text="@string/default_host"
+                android:inputType="text"/>
+
+        <EditText
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned"
+                android:ems="10"
+                android:id="@+id/port"
+                android:layout_gravity="center_vertical"
+                android:text="@string/default_port"
+                android:enabled="true"
+                android:focusable="true"/>
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_button"
+                android:id="@+id/buttonConnect"
+                android:layout_gravity="center_vertical"
+                android:focusable="false"
+                android:enabled="true"
+                android:clickable="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.64"
+            android:contentDescription="@string/image_description"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/imageTitle"
+            android:text="..."
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.03"
+            android:enabled="true"
+            android:focusable="true"
+            android:singleLine="true"/>
+
+</LinearLayout>
+
