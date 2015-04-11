@@ -18,7 +18,7 @@
             android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="0.14"
+            android:layout_weight="0.07"
             android:baselineAligned="true"
             android:clickable="false"
             android:visibility="visible"
@@ -50,13 +50,41 @@
         <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/connect_button"
+                android:text="@string/button_connect"
                 android:id="@+id/buttonConnect"
                 android:layout_gravity="center_vertical"
                 android:focusable="false"
                 android:enabled="true"
-                android:clickable="true"/>
+                android:clickable="true"
+                android:layout_weight="0.06"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+        <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/chooseFile"
+                android:text="@string/default_URI"
+                android:layout_gravity="center"
+                android:enabled="true"
+                android:focusable="true"
+                android:singleLine="true"
+                android:layout_weight="1"
+                />
+
+        <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/button_send"
+                android:id="@+id/buttonSend"
+                android:layout_weight="0.1"/>
     </LinearLayout>
 
     <ImageView

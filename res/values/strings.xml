@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Socket image</string>
-    <string name="app_main_title">Récupération une image via un socket</string>
+    <string name="app_name">"Socket image"</string>
+    <string name="app_main_title">"Récupération d'une image via un socket"</string>
 
-    <string name="connect_button">Connect</string>
-    <string name="image_description">Aperçu de image reçu du serveur</string>
+    <string name="button_connect">"Connect"</string>
+    <string name="button_send">"Send !"</string>
+    <string name="image_description">"Aperçu de l'image reçue du serveur"</string>
 
-    <string name="default_host">0.0.0.0</string>
-    <string name="default_port">8888</string>
+    <string name="default_host">"0.0.0.0"</string>
+    <string name="default_port">"8888"</string>
+    <string name="default_URI">"Choose file"</string>
 
 </resources>
